@@ -5,7 +5,7 @@ const path = require('path');
 const cors = require('cors');
 const PORT = 9000;
 
-const router = require('./router');
+// const router = require('./router');
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(parser.urlencoded({
   extended:true
 }));
 
-app.use('/api', router);
+// app.use('/api', router);
 
 app.use(express.static(path.join(__dirname, 'public')))
 
